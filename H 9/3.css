@@ -1,0 +1,17 @@
+.main-title {
+  color: blue;
+  font-size: 30px;
+}
+
+.main-paragraph {
+  color: gray;
+  font-size: 18px;
+}
+
+.main-button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

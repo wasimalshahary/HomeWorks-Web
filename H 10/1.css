@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 20px;
+  color: darkblue;
+}
+
+.box {
+  background: lightgray;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+/* % */
+.percent {
+  width: 50%;
+}
+
+/* em */
+.em-text {
+  font-size: 2em;
+}
+
+/* rem */
+html {
+  font-size: 16px; /* الأساس */
+}
+.rem-text {
+  font-size: 2rem;
+}
+
+/* vw */
+.vw {
+  width: 50vw;
+}
+
+/* vh */
+.vh {
+  height: 20vh;
+}
+
+/* vmin */
+.vmin {
+  width: 20vmin;
+}
+
+/* vmax */
+.vmax {
+  width: 20vmax;
+}
+
+/* ex */
+.ex-text {
+  line-height: 3ex;
+  border: 1px dashed #666;
+}
+
+/* ch */
+.ch {
+  width: 30ch;
+}

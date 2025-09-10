@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.circle-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.color-circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: conic-gradient(
+        red 0deg 30deg, 
+        orange 30deg 60deg, 
+        yellow 60deg 90deg, 
+        lime 90deg 120deg, 
+        green 120deg 150deg, 
+        teal 150deg 180deg, 
+        cyan 180deg 210deg, 
+        blue 210deg 240deg, 
+        indigo 240deg 270deg, 
+        purple 270deg 300deg, 
+        magenta 300deg 330deg, 
+        pink 330deg 360deg
+    );
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.circle-center {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: white;
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tools-container {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.tool-section {
+    margin-bottom: 25px;
+}
+
+.tool-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.tool-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tool-btn {
+    padding: 10px 15px;
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.tool-btn:hover {
+    background: linear-gradient(to bottom, #e0e0e0, #d5d5d5);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.color-pickers {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.color-1 {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+}
+
+.color-2 {
+    background: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+}
+
+.size-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.size-slider {
+    flex: 1;
+    height: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ddd;
+    outline: none;
+    border-radius: 5px;
+}
+
+.size-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4b6cb7;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .color-circle {
+        width: 220px;
+        height: 220px;
+    }
+}

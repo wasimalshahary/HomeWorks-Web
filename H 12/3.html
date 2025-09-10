@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفرق بين المحدد النسي والمحدد المباشر</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>الفرق بين المحدد النسي والمحدد المباشر في CSS</h1>
+            <p class="description">مشروع توضيحي يبين الفرق بين نوعي المحددات</p>
+        </header>
+        
+        <div class="content">
+            <div class="comparison">
+                <div class="selector-type descendant-example">
+                    <h2 class="selector-title">أ) المحدد النسي (Descendant Selector)</h2>
+                    <p class="selector-desc">يستهدف العناصر الموجودة داخل عنصر معين بغض النظر عن مستوى التداخل.</p>
+                    
+                    <div class="code-example">
+                        div p {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                        }
+                    </div>
+                    
+                    <div class="visual-example">
+                        <h3>مثال توضيحي:</h3>
+                        <div class="example-box">
+                            <p>هذه فقرة داخل div (سيتم تلوينها)</p>
+                            <section>
+                                <p>هذه فقرة داخل section داخل div (سيتم تلوينها أيضًا)</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="selector-type child-example">
+                    <h2 class="selector-title">ب) المحدد المباشر (Child Selector)</h2>
+                    <p class="selector-desc">يستهدف الأبناء المباشرين فقط وليس كل العناصر المتداخلة.</p>
+                    
+                    <div class="code-example">
+                        ul > li {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+                        }
+                    </div>
+                    
+                    <div class="visual-example">
+                        <h3>مثال توضيحي:</h3>
+                        <div class="example-box">
+                            <ul>
+                                <li>عنصر قائمة مباشر (سيتم تلوينه)</li>
+                                <li>عنصر قائمة مباشر آخر (سيتم تلوينه)
+                                    <ul>
+                                        <li>عنصر قائمة داخلي (لن يتم تلوينه)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary">
+                <h2>الخلاصة</h2>
+                <p>المحدد النسي (Descendant Selector) يستخدم المسافة بين العناصر (مثل: div p) ويؤثر على جميع العناصر المتداخلة بغض النظر عن مستوى التداخل.</p>
+                <p>المحدد المباشر (Child Selector) يستخدم علامة أكبر من (مثل: ul > li) ويؤثر فقط على الأبناء المباشرين للعنصر.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>تم تصميم هذا المشروع لأغراض تعليمية | CSS Selectors</p>
+        </footer>
+    </div>
+</body>
+</html>

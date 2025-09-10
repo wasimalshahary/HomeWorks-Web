@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>صفحة وسائط وروابط</title>
+</head>
+<body class="page-body">
+
+  <header>
+    <h1>موقع تجريبي</h1>
+  </header>
+
+  <main>
+    <div>
+      <h2>شعار الموقع</h2>
+      <img src="yemen.png" alt="شعار الموقع" width="150">
+    </div>
+
+    <div>
+      <h2>فيديو قصير</h2>
+      <video width="320" height="240" controls>
+        <source src="sample.mp4" type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو.
+      </video>
+    </div>
+
+    <div>
+      <h2>ملف صوت</h2>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        متصفحك لا يدعم تشغيل الصوت.
+      </audio>
+    </div>
+
+    <div>
+      <h2>رابط خارجي</h2>
+      <a href="https://example.com" target="_blank">اذهب إلى Example</a>
+    </div>
+
+    <div>
+      <h2>زر إلى قسم "من نحن"</h2>
+      <button onclick="document.getElementById('about').scrollIntoView();">من نحن</button>
+    </div>
+
+    <div id="about">
+      <h2>من نحن</h2>
+      <p> <strong>اقصد وسيم الشهاري</strong> نحن فريق مخصص لتطوير صفحات HTML تجريبية.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© جميع الحقوق محفوظة</p>
+  </footer>
+
+</body>
+</html>

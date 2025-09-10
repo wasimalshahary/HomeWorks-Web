@@ -1,0 +1,178 @@
+/* أنماط عامة */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+header {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.comparison {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.selector-type {
+    flex: 1;
+    min-width: 300px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.selector-title {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.selector-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.code-example {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px 0;
+    direction: ltr;
+    text-align: left;
+}
+
+.visual-example {
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.example-box {
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* أنماط المحدد النسي */
+.descendant-example .example-box p {
+    color: red;
+    padding: 8px;
+    background-color: #ffeeee;
+    border-right: 3px solid red;
+    margin: 10px 0;
+}
+
+/* أنماط المحدد المباشر */
+.child-example .example-box ul > li {
+    color: blue;
+    padding: 8px;
+    background-color: #eeeeff;
+    border-right: 3px solid blue;
+    margin: 5px 0;
+}
+
+/* العناصر غير المتأثرة */
+.visual-example p, .visual-example li {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.child-example .example-box ul ul li {
+    background-color: #f0f0f0;
+    border-right: 3px solid #ccc;
+    color: #666;
+}
+
+.summary {
+    background: #eef7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border-right: 5px solid #4b6cb7;
+}
+
+.summary h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.summary p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* التكيف مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .comparison {
+        flex-direction: column;
+    }
+    
+    .selector-type {
+        min-width: 100%;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .selector-title {
+        font-size: 20px;
+    }
+}
